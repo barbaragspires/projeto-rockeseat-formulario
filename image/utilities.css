@@ -1,0 +1,36 @@
+.heading-h1{
+	font: var(--heading1);
+	margin-block: 24px 8px;
+	color: var(--text-primary);
+}
+
+.section-header{
+	margin: 64px 64px 48px 64px;
+}
+
+.section-margin{
+	margin: 48px 64px 48px 64px ;
+}
+
+.heading-h2 {
+	font: var(--heading4);
+	margin-block: 48px 24px;
+	color: var(--text-primary);
+}
+
+label, option{
+	font: var(--heading5);
+	color:var(--text-secondary); 
+}
+
+.display-block{
+	display: block;
+	font: var(--heading5);
+	color:var(--text-secondary); 
+	width: 100%;
+	border: 1px solid var(--stroke-default);
+	border-radius: 9px;
+	margin-block: 4px 24px;
+	padding: 16px 12px
+}
+

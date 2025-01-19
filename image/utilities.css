@@ -21,6 +21,7 @@
 label, option{
 	font: var(--heading5);
 	color:var(--text-secondary); 
+	margin-bottom: 4px;
 }
 
 .display-block{
@@ -34,3 +35,8 @@ label, option{
 	padding: 16px 12px
 }
 
+.text-information{
+	font: var(--heading4);
+	color: var(--text-primary);
+	margin-block: 8px;
+}

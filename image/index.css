@@ -9,8 +9,6 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width:100%;
-
-	
 	
 }
 
@@ -49,7 +47,120 @@
 
 #input-birth-certificate{
 	opacity: 0;
-	padding: 42px;
+	padding: 65px 241px;
 	position: absolute;
 	cursor: pointer;
+}
+
+.grid-div{
+	display: grid;
+	grid-template-areas: 
+	"label-street label-number"
+	"input-street input-number"
+	"label-city   label-state"
+	"input-city   input-state";
+}
+
+.label-street{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.input-street{
+	grid-row: 2/2 ;
+	grid-column: 1/1;
+	font: var(--heading5);
+	color:var(--text-secondary); 
+	border: 1px solid var(--stroke-default);
+	border-radius: 9px;
+	margin-block: 4px 24px;
+	padding: 16px 12px;
+	width: 69ch;
+	margin-right: 30px;
+}
+
+.label-city{
+	grid-column: 1/2;
+	grid-row: 3/4
+}
+
+.input-city{
+	grid-column: 1/2;
+	grid-row: 4/5 ;
+	font: var(--heading5);
+	color:var(--text-secondary); 
+	border: 1px solid var(--stroke-default);
+	border-radius: 9px;
+	margin-block: 4px 24px;
+	padding: 16px 12px;
+	width: 69ch;
+	margin-right: 30px;
+
+}
+
+.input-number, 
+.input-state{
+	font: var(--heading5);
+	color:var(--text-secondary); 
+	border: 1px solid var(--stroke-default);
+	border-radius: 9px;
+	margin-block: 4px 24px;
+	padding: 16px 12px;
+	width: 15ch;
+}
+
+.section-flex{
+	display: flex;
+	justify-content: space-between;
+	margin-block: 16px 24px;
+}
+
+
+.study-shift{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--stroke-default);
+	border-radius: 9px;
+	width: 300px;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px
+
+}
+
+#study-shift{
+	position: relative;
+	border-bottom-color: var(--stroke-default);
+	width: 20px;
+	height: 20px;
+	right: 130px;
+	bottom: 60px;
+	cursor: pointer;
+
+}
+
+.flex-activies{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: auto;
+	gap: 16px;
+	margin-top:16px;
+	& span{
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+		width: 240px;
+		height: 130px;
+		border: 1px solid var(--stroke-default);
+		border-radius: 9px;
+	}
+
+}
+
+.text-information a{
+	text-decoration: none;
+	color: var(--brand-dark);
 }

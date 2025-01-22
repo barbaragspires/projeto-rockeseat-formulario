@@ -1,3 +1,4 @@
+
 .heading-h1{
 	font: var(--heading1);
 	margin-block: 24px 8px;
@@ -40,3 +41,45 @@ label, option{
 	color: var(--text-primary);
 	margin-block: 8px;
 }
+
+.display-grid{
+	display: grid;
+	grid-auto-flow: column;
+
+}
+
+.button-finish1{
+	font: var(--heading4);
+	color: var(--text-highlight);
+	width: 183px;
+	height: 48px;
+	background-color: #FFFF;
+	border: 2px solid var(--brand-mid);
+	border-radius: 8px;
+	margin-block: 64px;
+	cursor: pointer;
+}
+
+.button-finish1:hover{
+outline: 4px solid var(--surface-secondary);
+transition: 0,01ms
+
+}
+
+.button-finish2{
+	font: var(--heading4);
+	color: #ffff;
+	width: 183px;
+	height: 48px;
+	background-color: var(--brand-dark);
+	border: 2px solid var(--brand-dark);
+	border-radius: 8px;
+	margin-block: 64px;
+	cursor: pointer;
+}
+
+.button-finish2:hover{
+	background-color: var(--brand-mid);
+	border: 2px solid var(--brand-mid);
+}
+

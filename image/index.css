@@ -125,20 +125,24 @@
 	height: 150px;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 16px
-
-}
-
-#study-shift{
+	margin-bottom: 16px;
 	position: relative;
-	border-bottom-color: var(--stroke-default);
-	width: 20px;
-	height: 20px;
-	right: 130px;
-	bottom: 60px;
-	cursor: pointer;
 
 }
+
+.custom-study-shift{
+	position: absolute;
+	cursor: pointer;
+	left: 10px;
+	top: 10px;
+	width: 22px;
+	height: 22px;
+	opacity: 0;
+	z-index: 1;
+}
+
+
+
 
 .flex-activies{
 	display: flex;
@@ -149,7 +153,6 @@
 	margin-top:16px;
 	& span{
 		display: flex;
-
 		justify-content: center;
 		align-items: center;
 		width: 240px;
@@ -163,4 +166,58 @@
 .text-information a{
 	text-decoration: none;
 	color: var(--brand-dark);
+
 }
+
+#input-checkbox {
+	position: relative;
+	opacity: 0;
+	width: 15px;
+	height: 15px;
+	z-index: 1;
+	left: 3px;
+	top: 6px;
+	cursor: pointer;
+}
+
+.custom-checkbox {
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url(./icons/check-before.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	right: 20px;
+	top: 10px;
+	transition: background-image 0.3s ease-in-out, transform 0.2s ease;
+}
+
+#input-checkbox:checked + .custom-checkbox {
+	background-image: url(./icons/check-after.svg);
+
+}
+
+
+.save-finish{
+	gap: 16px;
+	justify-content: end;
+
+}
+
+.custom-radio {
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(icons/circle-before.svg) no-repeat;
+	background-size: cover;
+	left: 10px;
+	top: 10px;
+	transition: background-image 0.3s ease-in-out, transform 0.2s ease;
+
+}
+.custom-study-shift:checked + .custom-radio {
+	background-image: url(./icons/checkmark-circle-01-after.svg);
+
+}	

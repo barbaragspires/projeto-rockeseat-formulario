@@ -27,6 +27,7 @@
 }
 
 .input-certificate{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -37,8 +38,35 @@
 	height: 160px;
   align-items: center;
 	text-align: center;
+	& p{
+		margin-top: 30px;
+	}
+
+  & span{
+		position: absolute;
+		background-image: url(icons/cloud-upload.svg);
+		background-size: cover;
+		z-index: 9999;
+		width: 48px;
+		height: 48px;
+		top:28px;
+		cursor:pointer;
+		}
 
 }
+
+.input-certificate:hover{
+	border: 2px dashed var(--stroke-highlight);
+	background-color: var(--surface-secondary);
+
+	& span{
+	background-image: url(icons/cloud-upload-hover.svg);
+
+	
+	}
+}
+
+
 .file-input{
 	font: var(--heading4);
 	color:#A8A29E;
@@ -159,11 +187,12 @@
 		height: 130px;
 		border: 1px solid var(--stroke-default);
 		border-radius: 9px;
+		position: relative;
 	}
 
 }
 
-.text-information a{
+.text-information-finish a{
 	text-decoration: none;
 	color: var(--brand-dark);
 

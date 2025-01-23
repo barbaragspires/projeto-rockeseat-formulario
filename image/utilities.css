@@ -40,6 +40,15 @@ label, option{
 	font: var(--heading4);
 	color: var(--text-primary);
 	margin-block: 8px;
+
+}
+
+.text-information-finish{
+	font: var(--heading4);
+	color: var(--text-primary);
+	margin-block: 8px;
+	margin-left: 34px;
+
 }
 
 .display-grid{
@@ -83,3 +92,34 @@ transition: 0,01ms
 	border: 2px solid var(--brand-mid);
 }
 
+.custom-activities{
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(icons/circle-before.svg)no-repeat;
+	background-size: cover;
+	left: 10px;
+	top: 10px;
+	transition: background-image 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.activities{
+	width: 24px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	height: 24px;
+	cursor: pointer;
+	z-index: 1;
+	opacity: 0;
+}
+
+.activities:checked + .custom-activities {
+	background-image: url(./icons/checkmark-circle-01-after.svg);
+
+}	

@@ -102,11 +102,15 @@ transition: 0,01ms
 	left: 10px;
 	top: 10px;
 	transition: background-image 0.3s ease-in-out, transform 0.2s ease;
+
 }
 
 .absolute{
 	position: absolute;
+
 }
+
+
 
 .activities{
 	width: 24px;
@@ -123,3 +127,20 @@ transition: 0,01ms
 	background-image: url(./icons/checkmark-circle-01-after.svg);
 
 }	
+
+
+
+
+.custom-focus:focus {
+	border: 1px solid var(--stroke-highlight);
+	outline:4px solid var(--surface-secondary);
+	background-color: #fff4ee
+}
+
+.custom-disabled:disabled{
+background-color: var(--surface-disabled);
+border: 1px solid var(--stroke-default)
+
+}
+
+

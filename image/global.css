@@ -23,11 +23,11 @@ box-sizing: border-box;
 
 --surface-primary: #FFFFFF;
 --surface-secondary:#FEE7D6;
---surface-disabled: #E7E5E4;
+--surface-disabled: #dfdddd;
 
 /*Stroke*/
 
---stroke-default:#D6D3D1;
+--stroke-default:#8d8d8d;
 --stroke-highlight: #F3541C;
 
 /*Semantic*/

@@ -38,16 +38,16 @@
 					Informações da criança
 				</h2>
 					<label for="name">Nome completo</label>
-					<input class="display-block" type="text" name="" id="name" required>
+					<input class="display-block custom-focus" type="text" name="" id="name" required>
 					<label for="date-of-birth">Data de nascimento</label>
-					<input class="display-block" placeholder="DD/MM/AAAA" type="date" name="" id="date-of-birth" required>
+					<input class="display-block custom-focus" placeholder="DD/MM/AAAA" type="date" name="" id="date-of-birth" required>
 					<label for="sex">Sexo</label>
-					<select class="display-block" name="" id="sex" required>
+					<select class="display-block custom-focus" name="" id="sex" required>
 						<option value="female">Feminino</option>
 						<option value="male">Masculino</option>
 					</select>
 					<label for="medical-information">Informações médicas</label>
-					<textarea class="display-block" name="" id="medical-information"></textarea>
+					<textarea class="display-block custom-focus" name="" id="medical-information"></textarea>
 					<label for="input-birth-certificate">Certidão de nascimento</label>
 					<div class="input-certificate">
 						<input type="file" name="" id="input-birth-certificate">
@@ -62,16 +62,16 @@
 					Endereço residencial
 				</h2>
 				<label for="adress-code">CEP</label>
-				<input placeholder="12345-678" pattern="\d{5}-\d{3}" maxlength="9" minlength="9" class="display-block" type="text" name="" id="adress-code" required>
+				<input placeholder="12345-678" pattern="\d{5}-\d{3}" maxlength="9" minlength="9" class="display-block custom-focus" type="text" name="" id="adress-code" required>
 				<div class="grid-div">
 					<label class="label-street" for="street">Rua</label>
-					<input class="input-street" type="text" name="" id="street">
+					<input class="input-street custom-disabled" type="text" name="" id="street" disabled>
 					<label class="label-number" for="number">Número</label>
-					<input class="input-number" type="text" maxlength="4" pattern="\d{1,4}" id="number" required>
+					<input class="input-number custom-focus" type="text" maxlength="4" pattern="\d{1,4}" id="number" required>
 					<label class="label-city" for="city">Cidade</label>
-					<input class="input-city" type="text" name="" id="city" required>
+					<input class="input-city custom-disabled" type="text" name="" id="city" required disabled>
 					<label class="label-state" for="state">Estado</label>
-					<input class="input-state" maxlength="2" minlength="2" type="text" name="" id="state" required>
+					<input class="input-state custom-disabled" maxlength="2" minlength="2" type="text" name="" id="state" required disabled>
 				</div>
 			</section>
 			<section class="section-margin">
@@ -79,15 +79,14 @@
 					Informações do responsável
 				</h2>
 				<label for="person-responsible">Nome do responsável</label>
-				<input class="display-block" type="text" name="" id="person-responsible">
-				<p>Principal responsável legal e contato de emergência</p>
+				<input class="display-block custom-focus" type="text" name="" id="person-responsible">
 
 				<label for="telephone">Telefone</label>
-				<input class="display-block" type="tel" id="telephone" name="telefone" required>
+				<input class="display-block custom-focus" type="tel" id="telephone" name="telefone" required>
 
 				<label for="e-mail">E-mail</label>
-				<input class="display-block" type="email" name="" id="e-mail" required>
-
+				<input class="display-block custom-focus" type="email" name="" id="e-mail"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Por favor, insira um e-mail válido." placeholder="Digite seu email"  required>
+				<span class="erro"><img src="icons/alert-circle.svg" alt=""><p>Insira um email válido</p></span>
 			</section>
 			<section class="section-margin">
 				<h2 class="heading-h2">
@@ -114,7 +113,7 @@
 				</div>
 			<label for="activities">Em qual esporte você gostaria de inscrever seu filho?</label>
 				<div class="flex-activies">
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="1" name="option-sports" checked id="activities" class="activities">
 						<label class="custom-activities"></label>
 						<label for="activities">
@@ -122,7 +121,7 @@
 							<p class="text-information">Futebol</p>
 						</label>
 					</span>
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="2" name="option-sports" id="basketball" class="activities">
 						<label class="custom-activities"></label>
 						<label for="basketball">
@@ -130,7 +129,7 @@
 							<p class="text-information">Basquete</p>
 						</label>
 					</span>
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="3" name="option-sports" id="swimming" class="activities">
 						<label class="custom-activities"></label>
 						<label for="swimming">
@@ -138,7 +137,7 @@
 							<p class="text-information">Natação</p>
 						</label>
 					</span>
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="4" name="option-sports" id="yoga" class="activities">
 						<label class="custom-activities"></label>
 						<label for="yoga">
@@ -146,7 +145,7 @@
 							<p class="text-information">Yoga</p>
 						</label>
 					</span>
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="5" name="option-sports" id="volleyball" class="activities">
 						<label class="custom-activities"></label>
 						<label for="volleyball">
@@ -154,7 +153,7 @@
 							<p class="text-information">Voleibol</p>
 						</label>
 					</span>
-					<span>
+					<span class="span-activies">
 						<input type="radio" value="6" name="option-sports" id="boxing" class="activities">
 						<label class="custom-activities"></label>
 						<label for="boxing">

@@ -158,6 +158,20 @@
 
 }
 
+.study-shift:hover{
+	border: 2px solid var(--stroke-highlight);
+	& .custom-radio {
+		background-image: url(icons/circle-hover.svg);
+
+	}
+}
+
+#input-checkbox:checked + .custom-checkbox {
+	background-image: url(./icons/check-after.svg);
+
+}
+
+
 .custom-study-shift{
 	position: absolute;
 	cursor: pointer;
@@ -179,7 +193,7 @@
 	width: auto;
 	gap: 16px;
 	margin-top:16px;
-	& span{
+	& .span-activies{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -189,8 +203,14 @@
 		border-radius: 9px;
 		position: relative;
 	}
-
 }
+	.span-activies:hover{
+	border: 2px solid var(--stroke-highlight);
+
+	&	.custom-activities{
+	background-image: url(icons/circle-hover.svg);
+}
+	}
 
 .text-information-finish a{
 	text-decoration: none;
@@ -207,7 +227,9 @@
 	left: 3px;
 	top: 6px;
 	cursor: pointer;
+	
 }
+
 
 .custom-checkbox {
 	position: relative;
@@ -249,4 +271,40 @@
 .custom-study-shift:checked + .custom-radio {
 	background-image: url(./icons/checkmark-circle-01-after.svg);
 
+
 }	
+.study-shift:has(.custom-study-shift:checked){
+border: 2px solid var(--stroke-highlight);
+}
+
+.span-activies:has(.activities:checked){
+	border: 2px solid var(--stroke-highlight);
+}
+	
+.erro{
+	display: none;
+	font: var(--heading4);
+	color: #DC2626;
+	display: flex;
+  align-items: center;
+	justify-content: start;
+	align-items: center;
+	gap:5px
+}
+
+#e-mail:placeholder-shown + .erro {
+  display: none;
+}
+
+#e-mail:invalid:not(:placeholder-shown) + .erro {
+  display: flex;
+}
+
+#e-mail:valid + .erro {
+  display: none;
+}
+
+#medical-information{
+    resize: vertical;
+		max-height: 300px;
+	}

@@ -193,19 +193,20 @@ input[type="date"]{
 .study-shift{
 	display: flex;
 	flex-direction: column;
-	border: 0.0625rem solid var(--stroke-default);
-	border-radius: 0.5625rem;
+	border: 0.062rem solid var(--stroke-default);
+	border-radius: 0.56rem;
 	width: 18.75rem;
 	height: 9.375rem;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1rem;
+	margin-bottom: 1px;
 	position: relative;
 
 }
 
 .study-shift:hover{
-	border: 0.125rem solid var(--stroke-highlight);
+	border: 0.12rem solid var(--stroke-highlight);
+
 	& .custom-radio {
 		background-image: url(icons/circle-hover.svg);
 
@@ -251,11 +252,11 @@ input[type="date"]{
 	}
 }
 	.span-activies:hover{
-	border: 0.125rem solid var(--stroke-highlight);
+		border: 0.125rem solid var(--stroke-highlight);
 
-	&	.custom-activities{
-	background-image: url(icons/circle-hover.svg);
-}
+		& .custom-activities{
+		background-image: url(icons/circle-hover.svg);
+		}
 	}
 
 .text-information-finish a{
